@@ -1,13 +1,14 @@
-Here are codes about the kernel method for persistence diagrams (support vector machine, kernel PCA, kernel two sample test, uniform confidence interval)
+Here are codes about the kernel method for persistence diagrams (support vector machine, kernel PCA, kernel two sample test, uniform confidence interval) and also a suppelemtary material of my doctoral thesis, which will be uploaded in March 2019.
 
 # General comments
 
-## variables
-You can change `name_dir_pcd` to a folder containing your persistence diagrams.
-
 ## data
 Example persistence diagrams are able to be obtained from https://github.com/genki-kusano/point_cloud_data (called `PCD code`)
-To run codes in this directly without any change, please run the PCD code creating point sets and persistence diagrams.
+To run the codes in this directly without any change, please run the PCD code creating point sets and persistence diagrams.
+
+## variables
+You can change `name_dir_pcd` to a folder containing your persistence diagrams.
+To run the codes by default setting, please prepare the PCD folder on your desktop. 
 
 # pca.py
 For n persistence diagrams D_1,...,D_n, we compute the kernel principal component analysis projection to 2 or 3 dimensional Euclidean space.
