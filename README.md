@@ -23,7 +23,7 @@ persistence image (http://jmlr.org/papers/v18/16-337.html)
 * sw.py  
 Sliced Wasserstein kernel (http://proceedings.mlr.press/v70/carriere17a.html)   
 
-* kernel.py 
+* kernel.py  
 All above methods can create their Gram matrix by their kernels.
 
 
