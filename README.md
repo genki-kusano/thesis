@@ -10,6 +10,23 @@ To run the codes in this directly without any change, please run the PCD code cr
 You can change `name_dir_pcd` to a folder containing your persistence diagrams.
 To run the codes by default setting, please prepare the PCD folder on your desktop. 
 
+# functions folder
+The `functions folder` contains 5 methods for persistence diagrams.
+* pwk.py  
+class Kernel : persistence weighted (Gaussian) kernel (http://jmlr.org/papers/v18/17-317.html)    
+class KernelPss : persistence scale-scape kernel (https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Reininghaus_A_Stable_Multi-Scale_2015_CVPR_paper.html)  
+As mentioned in , the persistence scale-space kernel can be viewed as an example of the persistence weighted kernel. Hence, we could apply the same approximation method (`self.approx`) by the random Fourier features (see def make_rff).
+* landscape.py  
+persistence landscape (http://www.jmlr.org/papers/v16/bubenik15a.html)  
+* image.py  
+persistence image (http://jmlr.org/papers/v18/16-337.html)   
+* sw.py  
+Sliced Wasserstein kernel (http://proceedings.mlr.press/v70/carriere17a.html)   
+
+* kernel.py 
+All above methods can create their Gram matrix by their kernels.
+
+
 # pca.py
 For n persistence diagrams D_1,...,D_n, we compute the kernel principal component analysis projection to 2 or 3 dimensional Euclidean space.
 If you do not prepare your persistence diagrams, this will compute for `torus` data of the PCD code.
